@@ -1,4 +1,4 @@
-# Charter v1
+# Charter
 
 Coherent Evolution is a pattern for evolving projects consciously.
 
