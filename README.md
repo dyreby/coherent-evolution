@@ -1,8 +1,8 @@
 # Coherent Evolution
 
-A pattern for evolving projects consciously — from stable charter through versioned vision to disposable design.
+A model for building software together.
 
-See [CHARTER.md](CHARTER.md) for the pattern.
+See [CHARTER.md](CHARTER.md) for the purpose and [VISION.md](VISION.md) for the model.
 
 ## License
 
