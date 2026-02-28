@@ -1,6 +1,6 @@
 # Design
 
-This document operationalizes the [Vision](VISION.md).
+This document bridges the [Vision](VISION.md) to practice.
 
 ## Constraint and Feedback
 
