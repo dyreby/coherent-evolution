@@ -13,11 +13,9 @@ Change means different things at different levels. When the charter changes, tha
 
 Not everyone needs or wants to care about every level, and that's a gift, not a gap. Share the understanding, build the trust, and you can do what you love and call it work.
 
-What makes this possible is shared artifacts at each level — a charter, a vision, design documents, whatever fits the project. These are artifacts of clarity, not procedures of compliance. The point is having something you can point to that captures alignment, not following a prescribed process to produce it.
+What makes this possible is shared artifacts at each level — a charter, a vision, design documents, whatever fits the project. Something you can point to that captures alignment, not a prescribed process for producing it.
 
 ## Success Criteria
-
-Observable indicators that coherent evolution is working:
 
 - Changes can be clearly classified by level. When someone proposes a change, it's obvious whether it touches charter, vision, design, or implementation.
 - Wrong-level conflicts decrease. Design disagreements stop masquerading as implementation debates. Charter tensions stop surfacing as design friction.
@@ -26,9 +24,7 @@ Observable indicators that coherent evolution is working:
 
 ## Non-Goals
 
-What Coherent Evolution explicitly avoids:
-
-- **Prescribing process.** Coherent Evolution doesn't tell you how to work — no ceremonies, cadences, or workflows. It's a model for understanding change, not a methodology for managing it.
-- **Defining governance.** Coherent Evolution identifies what kind of change is happening, not who gets to make it. Authority and ownership structures are yours to define.
-- **Replacing domain expertise.** Coherent Evolution is a lens, not a substitute. Knowing that a change is at the design level doesn't tell you what the right design is.
-- **Standardizing structure.** Coherent Evolution doesn't require specific file layouts, document formats, or organizational hierarchies. The artifacts are yours to shape.
+- **Prescribing process.** No ceremonies, cadences, or workflows. It's a model for understanding change, not a methodology for managing it.
+- **Defining governance.** It identifies what kind of change is happening, not who gets to make it. Authority and ownership structures are yours to define.
+- **Replacing domain expertise.** It's a lens, not a substitute. Knowing that a change is at the design level doesn't tell you what the right design is.
+- **Standardizing structure.** No required file layouts, document formats, or organizational hierarchies. The artifacts are yours to shape.
