@@ -73,9 +73,8 @@ What matters is detecting drift early and correcting at the right level.
 
 **When to escalate vs. absorb:**
 
-Absorb when the signal is local: a one-off exception, a single ambiguous case, a friction that resolves with a small clarification at the current level.
-
-Escalate when the signal is structural: the same pattern across multiple instances, friction that can't be resolved without reinterpreting a higher level, or disagreement that persists after the current level's constraints have been applied.
+- Absorb when the signal is local: a one-off exception, a single ambiguous case, a friction that resolves with a small clarification at the current level.
+- Escalate when the signal is structural: the same pattern across multiple instances, friction that can't be resolved without reinterpreting a higher level, or disagreement that persists after the current level's constraints have been applied.
 
 ## Artifacts of Clarity
 
