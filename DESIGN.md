@@ -1,15 +1,14 @@
 # Design
 
 This document operationalizes the [Vision](VISION.md).
-It defines how the levels model works in practice — constraint flow, change classification, drift detection, and what Coherent Evolution (CE) requires structurally.
 
 ## Constraint and Feedback
 
 Each level constrains the next downward:
 
-- Charter constrains Vision. The vision must serve the charter's purpose.
-- Vision constrains Design. Design decisions must advance vision goals.
-- Design constrains Implementation. Code must follow design choices.
+- Charter constrains Vision.
+- Vision constrains Design.
+- Design constrains Implementation.
 
 Feedback flows upward:
 
@@ -30,7 +29,6 @@ When an escalation is identified, resolve it at the level where the ambiguity li
 
 ## Change Classification
 
-Not all changes are equal.
 A change's level determines its blast radius, review expectations, and who needs to care.
 
 **Implementation** — the work.
@@ -45,8 +43,7 @@ Existing implementation may need to adapt.
 
 **Vision** — growth.
 The change redefines what success looks like, adds or removes goals, or shifts priorities.
-All design and implementation become candidates for reassessment.
-The charter must still be served.
+All design and implementation become candidates for reassessment, but the charter must still be served.
 
 **Charter** — a new project.
 The fundamental purpose changes.
@@ -64,11 +61,9 @@ If the lower-level change keeps bumping into higher-level questions, that's an e
 
 ## Misalignment and Drift
 
-Alignment is a process, not a state.
-Drift is normal.
-What matters is detecting it early and correcting at the right level.
+What matters is detecting drift early and correcting at the right level.
 
-**Observable signals of drift:**
+**Observable signals:**
 
 - The same debate reopens repeatedly without resolution.
 - Exception lists grow: special cases that don't fit the design.
@@ -88,30 +83,25 @@ CE doesn't tell a project what to do.
 It identifies the types of structural clarity that make alignment visible.
 Each project finds how best to serve them.
 
-These are artifacts of clarity, not procedures of compliance — "have this, not do this."
-
 **What must be structurally clear:**
 
-- **Purpose** — why the project exists.
+- **Charter** — why the project exists.
   Short enough to hold in memory.
   Stable enough that changing it means starting over.
 
-- **Direction** — what serves that purpose today.
+- **Vision** — what serves that purpose today.
   Includes goals, success criteria, and explicit non-goals.
   Evolves as understanding grows.
 
-- **Structure** — how the direction gets built.
-  References directional constraints.
+- **Design** — how the vision gets built.
+  References vision constraints.
   Captures patterns, boundaries, and classification decisions.
 
 - **Classified changes** — changes are labeled by level.
   The classification is visible in the change record.
   Misclassification is a signal, not a failure.
 
-- **Revision trail** — when direction or structure change, the change is traceable.
+- **Revision trail** — when vision or design change, the change is traceable.
   What shifted, why, and what it affects downstream.
 
-These close the feedback loop.
-Implementation pain that surfaces a structural flaw is captured in a revision.
-Structural friction that reveals a directional gap is captured in a revision.
 The trail is the mechanism — without it, feedback dissipates.
