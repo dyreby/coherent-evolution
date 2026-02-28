@@ -1,7 +1,7 @@
 # Design
 
 This document operationalizes the [Vision](VISION.md).
-It defines how the levels model works in practice — constraint flow, change classification, drift detection, and what CE requires structurally.
+It defines how the levels model works in practice — constraint flow, change classification, drift detection, and what Coherent Evolution (CE) requires structurally.
 
 ## Constraint and Feedback
 
