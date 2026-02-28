@@ -99,7 +99,7 @@ Every project following CE needs structural clarity at three levels:
 
 **Artifacts of change** make evolution traceable.
 They capture why decisions were made, so the reasoning survives the conversations they were made in.
-What these look like varies by project — issues, pull requests, commit history, design docs, conversation threads, whatever fits.
+What these look like varies by project: issues, pull requests, commit history, design docs, conversation threads, whatever fits.
 What matters is that those involved can trace a decision back to its reasoning.
 Too much tracing creates noise; too little lets context disappear.
 The right level is a judgment call, and the project will tell you which way you're off — the same drift signals described above apply here.
