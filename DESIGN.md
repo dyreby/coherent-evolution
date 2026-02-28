@@ -7,9 +7,9 @@ It defines how the levels model works in practice — constraint flow, change cl
 
 Each level constrains the next downward:
 
-- Charter constrains Vision — the vision must serve the charter's purpose.
-- Vision constrains Design — design decisions must advance vision goals.
-- Design constrains Implementation — code must follow design choices.
+- Charter constrains Vision. The vision must serve the charter's purpose.
+- Vision constrains Design. Design decisions must advance vision goals.
+- Design constrains Implementation. Code must follow design choices.
 
 Feedback flows upward:
 
@@ -71,16 +71,16 @@ What matters is detecting it early and correcting at the right level.
 **Observable signals of drift:**
 
 - The same debate reopens repeatedly without resolution.
-- Exception lists grow — special cases that don't fit the design.
+- Exception lists grow: special cases that don't fit the design.
 - Implementation churn continues without corresponding design evolution.
 - Contributors interpret the same vision goal in conflicting ways.
-- Changes are routinely misclassified — implementation changes that are actually design shifts, or design changes disguised as implementation.
+- Changes are routinely misclassified: implementation changes that are actually design shifts, or design changes disguised as implementation.
 
 **When to escalate vs. absorb:**
 
-Absorb when the signal is local — a one-off exception, a single ambiguous case, a friction that resolves with a small clarification at the current level.
+Absorb when the signal is local: a one-off exception, a single ambiguous case, a friction that resolves with a small clarification at the current level.
 
-Escalate when the signal is structural — the same pattern across multiple instances, friction that can't be resolved without reinterpreting a higher level, or disagreement that persists after the current level's constraints have been applied.
+Escalate when the signal is structural: the same pattern across multiple instances, friction that can't be resolved without reinterpreting a higher level, or disagreement that persists after the current level's constraints have been applied.
 
 ## Artifacts of Clarity
 
