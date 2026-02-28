@@ -102,4 +102,4 @@ Each project finds how best to serve them.
 
 - **Revision trail** — when vision or design change, the change is traceable.
   What shifted, why, and what it affects downstream.
-  The trail is the mechanism — without it, feedback dissipates.
+  Without the trail, feedback dissipates.
