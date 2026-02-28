@@ -2,7 +2,7 @@
 
 This document bridges the [Vision](VISION.md) to practice.
 
-## Constraint and Feedback
+## Constraints and Feedback
 
 Each level constrains the next downward:
 
@@ -19,70 +19,53 @@ Feedback flows upward:
 - Vision tension signals charter ambiguity.
   Vision goals that pull in incompatible directions, or evolution that no longer clearly serves the charter.
 
-**Escalation triggers.** Upward feedback becomes an escalation when:
+Misalignment is easiest to resolve at the highest level where it occurs.
+Signs that a higher-level conversation may serve you well:
 
-- The same friction reappears after being addressed at the current level.
-- A decision at the current level requires assumptions about the level above.
-- Contributors disagree on interpretation, and the disagreement traces to the higher level.
-
-When an escalation is identified, resolve it at the level where the ambiguity lives before continuing work below.
+- Exception lists keep growing.
+- More unicorns are allowed.
+- The same type of friction keeps reappearing.
+- People seem to be talking past each other.
 
 ## Change Classification
 
-A change's level determines its blast radius, review expectations, and who needs to care.
+Changes in a project happen at different levels.
+The level shapes the meaning and the blast radius.
 
-**Implementation** — the work.
-The change stays within existing design boundaries.
-No new patterns, no structural shifts.
-Tests pass, constraints hold, ship it.
+**Implementation** — changes here are the work.
+- Stays within existing design boundaries.
+- No new patterns, no structural shifts.
 
-**Design** — learning.
-The change introduces or revises a pattern, module boundary, or architectural choice.
-It should reference the vision goal it serves.
-Existing implementation may need to adapt.
+**Design** — changes here indicate learning.
+- Introduces or revises a pattern, module boundary, or architectural choice.
+- Existing implementation may need to adapt.
 
-**Vision** — growth.
-The change redefines what success looks like, adds or removes goals, or shifts priorities.
-All design and implementation become candidates for reassessment, but the charter must still be served.
+**Vision** — changes here represent growth.
+- Redefines what success looks like or shifts priorities.
+- All design and implementation decisions become candidates for reassessment.
 
-**Charter** — a new project.
-The fundamental purpose changes.
-Everything below is invalidated and rebuilt from the new foundation.
+**Charter** — changes here mean a new project.
+- The fundamental purpose changes.
+- Everything below is invalidated and rebuilt from the new foundation.
 
-**Decision tree:**
+When classification isn't obvious, these questions may help:
 
-1. Does this change the project's purpose? → Charter change.
-2. Does this change what success looks like or what the project values? → Vision change.
-3. Does this introduce a new pattern, boundary, or structural decision? → Design change.
-4. None of the above → Implementation change.
+1. Does this change the project's purpose? → Charter.
+2. Does this change what success looks like or what the project values? → Vision.
+3. Does this introduce a new pattern, boundary, or structural decision? → Design.
+4. None of the above → Implementation.
 
-When classification is ambiguous, default to the lower level and note the uncertainty.
-If the lower-level change keeps bumping into higher-level questions, that's an escalation trigger — reclassify upward.
+When in doubt, default to the lower level.
+If the change keeps bumping into higher-level questions, that's a sign it belongs higher.
 
-## Misalignment and Drift
+## Artifacts
 
-What matters is detecting drift early and correcting at the right level.
+The vision describes shared artifacts at each level — something you can point to that captures alignment.
+In practice, there are two kinds of artifacts that make collaboration work.
 
-**Observable signals:**
+### Clarity
 
-- The same debate reopens repeatedly without resolution.
-- Exception lists grow: special cases that don't fit the design.
-- Implementation churn continues without corresponding design evolution.
-- Contributors interpret the same vision goal in conflicting ways.
-- Changes are routinely misclassified: implementation changes that are actually design shifts, or design changes disguised as implementation.
-
-**When to escalate vs. absorb:**
-
-- Absorb when the signal is local: a one-off exception, a single ambiguous case, a friction that resolves with a small clarification at the current level.
-- Escalate when the signal is structural: the same pattern across multiple instances, friction that can't be resolved without reinterpreting a higher level, or disagreement that persists after the current level's constraints have been applied.
-
-## Artifacts of Clarity
-
-CE doesn't tell a project what to do.
-It identifies the types of structural clarity that make alignment visible.
-Each project finds how best to serve them.
-
-**What must be structurally clear:**
+Artifacts of clarity capture what alignment looks like at each level.
 
 - **Charter** — why the project exists.
   Short enough to hold in memory.
@@ -96,10 +79,16 @@ Each project finds how best to serve them.
   References vision constraints.
   Captures patterns, boundaries, and classification decisions.
 
-- **Classified changes** — changes are labeled by level.
-  The classification is visible in the change record.
-  Misclassification is a signal, not a failure.
+- **Implementation** — the code itself.
+  Expresses design decisions in working software.
 
-- **Revision trail** — when vision or design change, the change is traceable.
-  What shifted, why, and what it affects downstream.
-  Without the trail, feedback dissipates.
+### Change
+
+Artifacts of change capture how those artifacts evolve.
+They preserve why decisions were made, so the reasoning survives the conversations they were made in.
+What these look like varies by project: issues, pull requests, commit history, design docs, conversation threads, whatever fits.
+They serve all levels — a pull request might change the vision or fix a bug.
+
+How many to keep is its own question.
+Too many create noise; too few risk context being lost.
+The right balance, and how it evolves with the project, should be a continuing conversation for those involved.
