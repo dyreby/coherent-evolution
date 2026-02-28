@@ -1,6 +1,6 @@
 # Vision
 
-Every project involves decisions from why it exists to how the code is written. Coherent Evolution is a model that makes those levels explicit so you can focus on the ones that matter to you.
+Every project involves decisions that range from why it exists to how the code is written. Coherent Evolution is a model that makes those levels explicit so you can focus on the ones that matter to you.
 
 - Charter — Why we're here
 - Vision — What serves that purpose today
