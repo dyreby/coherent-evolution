@@ -76,13 +76,13 @@ What matters is detecting drift early and correcting at the right level.
 - Absorb when the signal is local: a one-off exception, a single ambiguous case, a friction that resolves with a small clarification at the current level.
 - Escalate when the signal is structural: the same pattern across multiple instances, friction that can't be resolved without reinterpreting a higher level, or disagreement that persists after the current level's constraints have been applied.
 
-## Artifacts of Clarity
+## Artifacts of Clarity and Change
 
-CE doesn't tell a project what to do.
-It identifies the types of structural clarity that make alignment visible.
-Each project finds how best to serve them.
+CE identifies two kinds of artifacts that make collaboration work.
 
-**What must be structurally clear:**
+**Artifacts of clarity** make alignment visible.
+They capture what a project is and how it thinks about itself.
+Every project following CE needs structural clarity at three levels:
 
 - **Charter** — why the project exists.
   Short enough to hold in memory.
@@ -96,10 +96,9 @@ Each project finds how best to serve them.
   References vision constraints.
   Captures patterns, boundaries, and classification decisions.
 
-- **Classified changes** — changes are labeled by level.
-  The classification is visible in the change record.
-  Misclassification is a signal, not a failure.
-
-- **Revision trail** — when vision or design change, the change is traceable.
-  What shifted, why, and what it affects downstream.
-  Without the trail, feedback dissipates.
+**Artifacts of change** make evolution traceable.
+They capture why decisions were made, so the reasoning survives the conversations they were made in.
+What these look like varies by project — issues, pull requests, commit history, design docs, conversation threads, whatever fits.
+What matters is that those involved can trace a decision back to its reasoning.
+Too much tracing creates noise; too little lets context disappear.
+The right level is a judgment call, and the project will tell you which way you're off — the same drift signals described above apply here.
