@@ -1,6 +1,6 @@
 # Vision
 
-Coherent Evolution models software as levels of care.
+Every project involves decisions from why it exists to how the code is written. Coherent Evolution is a model that makes those levels explicit so you can focus on the ones that matter to you.
 
 - Charter — Why we're here
 - Vision — What serves that purpose today
@@ -26,9 +26,9 @@ Observable indicators that coherent evolution is working:
 
 ## Non-Goals
 
-What CE explicitly avoids:
+What Coherent Evolution explicitly avoids:
 
-- **Prescribing process.** CE doesn't tell you how to work — no ceremonies, cadences, or workflows. It's a model for understanding change, not a methodology for managing it.
-- **Defining governance.** CE identifies what kind of change is happening, not who gets to make it. Authority and ownership structures are yours to define.
-- **Replacing domain expertise.** CE is a lens, not a substitute. Knowing that a change is at the design level doesn't tell you what the right design is.
-- **Standardizing structure.** CE doesn't require specific file layouts, document formats, or organizational hierarchies. The artifacts are yours to shape.
+- **Prescribing process.** Coherent Evolution doesn't tell you how to work — no ceremonies, cadences, or workflows. It's a model for understanding change, not a methodology for managing it.
+- **Defining governance.** Coherent Evolution identifies what kind of change is happening, not who gets to make it. Authority and ownership structures are yours to define.
+- **Replacing domain expertise.** Coherent Evolution is a lens, not a substitute. Knowing that a change is at the design level doesn't tell you what the right design is.
+- **Standardizing structure.** Coherent Evolution doesn't require specific file layouts, document formats, or organizational hierarchies. The artifacts are yours to shape.
