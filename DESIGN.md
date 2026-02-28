@@ -2,7 +2,7 @@
 
 This document bridges the [Vision](VISION.md) to practice.
 
-## Constraint and Feedback
+## Constraints and Feedback
 
 Each level constrains the next downward:
 
@@ -19,62 +19,43 @@ Feedback flows upward:
 - Vision tension signals charter ambiguity.
   Vision goals that pull in incompatible directions, or evolution that no longer clearly serves the charter.
 
-**Escalation triggers.** Upward feedback becomes an escalation when:
+Misalignment is easiest to resolve at the highest level where it occurs.
+Signs that a higher-level conversation may serve you well:
 
-- The same friction reappears after being addressed at the current level.
-- A decision at the current level requires assumptions about the level above.
-- Contributors disagree on interpretation, and the disagreement traces to the higher level.
-
-When an escalation is identified, resolve it at the level where the ambiguity lives before continuing work below.
+- Exception lists keep growing.
+- More unicorns are allowed.
+- The same type of friction keeps reappearing.
+- People seem to be talking past each other.
 
 ## Change Classification
 
-A change's level determines its blast radius, review expectations, and who needs to care.
+Changes in a project happen at different levels, and the level determines the blast radius.
 
 **Implementation** — the work.
 The change stays within existing design boundaries.
 No new patterns, no structural shifts.
-Tests pass, constraints hold, ship it.
 
 **Design** — learning.
 The change introduces or revises a pattern, module boundary, or architectural choice.
-It should reference the vision goal it serves.
 Existing implementation may need to adapt.
 
 **Vision** — growth.
-The change redefines what success looks like, adds or removes goals, or shifts priorities.
-All design and implementation become candidates for reassessment, but the charter must still be served.
+The change redefines what success looks like or shifts priorities.
+All design and implementation decisions become candidates for reassessment.
 
 **Charter** — a new project.
 The fundamental purpose changes.
 Everything below is invalidated and rebuilt from the new foundation.
 
-**Decision tree:**
+When classification isn't obvious, these questions may help:
 
-1. Does this change the project's purpose? → Charter change.
-2. Does this change what success looks like or what the project values? → Vision change.
-3. Does this introduce a new pattern, boundary, or structural decision? → Design change.
-4. None of the above → Implementation change.
+1. Does this change the project's purpose? → Charter.
+2. Does this change what success looks like or what the project values? → Vision.
+3. Does this introduce a new pattern, boundary, or structural decision? → Design.
+4. None of the above → Implementation.
 
-When classification is ambiguous, default to the lower level and note the uncertainty.
-If the lower-level change keeps bumping into higher-level questions, that's an escalation trigger — reclassify upward.
-
-## Misalignment and Drift
-
-What matters is detecting drift early and correcting at the right level.
-
-**Observable signals:**
-
-- The same debate reopens repeatedly without resolution.
-- Exception lists grow: special cases that don't fit the design.
-- Implementation churn continues without corresponding design evolution.
-- Contributors interpret the same vision goal in conflicting ways.
-- Changes are routinely misclassified: implementation changes that are actually design shifts, or design changes disguised as implementation.
-
-**When to escalate vs. absorb:**
-
-- Absorb when the signal is local: a one-off exception, a single ambiguous case, a friction that resolves with a small clarification at the current level.
-- Escalate when the signal is structural: the same pattern across multiple instances, friction that can't be resolved without reinterpreting a higher level, or disagreement that persists after the current level's constraints have been applied.
+When in doubt, default to the lower level.
+If the change keeps bumping into higher-level questions, that's a sign it belongs higher.
 
 ## Artifacts
 
