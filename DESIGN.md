@@ -81,9 +81,9 @@ What matters is detecting drift early and correcting at the right level.
 The vision describes shared artifacts at each level — something you can point to that captures alignment.
 In practice, there are two kinds of artifacts that make collaboration work.
 
-### Artifacts of Clarity
+### Clarity
 
-Artifacts of Clarity make alignment visible.
+Artifacts of clarity make alignment visible.
 They capture what a project is and how it thinks about itself.
 Every project following CE needs structural clarity at three levels:
 
@@ -99,11 +99,11 @@ Every project following CE needs structural clarity at three levels:
   References vision constraints.
   Captures patterns, boundaries, and classification decisions.
 
-### Artifacts of Change
+### Change
 
-Artifacts of Change make evolution traceable.
+Artifacts of change make evolution traceable.
 They capture why decisions were made, so the reasoning survives the conversations they were made in.
-What these look like varies by project: issues, pull requests, commit history, design docs, conversation threads, whatever fits.
-What matters is that those involved can trace a decision back to its reasoning.
-Too much tracing creates noise; too little lets context disappear.
-The right level is a judgment call, and the project will tell you which way you're off — the same drift signals described above apply here.
+What these artifacts look like varies by project: issues, pull requests, commit history, design docs, conversation threads, whatever fits.
+
+There's a balance. Too many artifacts create noise; too few risk context being lost.
+What the right balance is, and how it evolves with the project, is a conversation for those involved.
