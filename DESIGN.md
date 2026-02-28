@@ -84,34 +84,34 @@ Escalate when the signal is structural — the same pattern across multiple inst
 
 ## Artifacts of Clarity
 
-CE requires structural artifacts that make alignment visible.
+CE doesn't tell a project what to do.
+It identifies the types of structural clarity that make alignment visible.
+Each project finds how best to serve them.
+
 These are artifacts of clarity, not procedures of compliance — "have this, not do this."
 
-CE does not prescribe workflow mechanics, tooling, or process.
-It specifies what must exist and what it must contain.
+**What must be structurally clear:**
 
-**Required artifacts:**
-
-- **Charter** — the project's purpose, stated plainly.
+- **Purpose** — why the project exists.
   Short enough to hold in memory.
   Stable enough that changing it means starting over.
 
-- **Vision** — what serves the charter today.
+- **Direction** — what serves that purpose today.
   Includes goals, success criteria, and explicit non-goals.
   Evolves as understanding grows.
 
-- **Design** — how the vision gets built.
-  References vision constraints.
+- **Structure** — how the direction gets built.
+  References directional constraints.
   Captures patterns, boundaries, and classification decisions.
 
 - **Classified changes** — changes are labeled by level.
-  The classification is visible in the change record (commit, PR, or equivalent).
+  The classification is visible in the change record.
   Misclassification is a signal, not a failure.
 
-- **Identifiable revisions** — vision and design artifacts have a revision trail.
-  When they change, the change is traceable — what shifted, why, and what it affects downstream.
+- **Revision trail** — when direction or structure change, the change is traceable.
+  What shifted, why, and what it affects downstream.
 
-These artifacts close the feedback loop.
-Implementation pain that surfaces a design flaw is captured in a design revision.
-Design friction that reveals a vision gap is captured in a vision revision.
+These close the feedback loop.
+Implementation pain that surfaces a structural flaw is captured in a revision.
+Structural friction that reveals a directional gap is captured in a revision.
 The trail is the mechanism — without it, feedback dissipates.
