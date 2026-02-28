@@ -13,7 +13,7 @@ Change means different things at different levels. When the charter changes, tha
 
 Not everyone needs or wants to care about every level, and that's a gift, not a gap. Share the understanding, build the trust, and you can do what you love and call it work.
 
-What makes this possible is shared artifacts at each level — a charter, a vision, design documents, whatever fits the project. Artifacts of clarity, not procedures of compliance. The point is having something you can point to that captures alignment, not following a prescribed process to produce it.
+What makes this possible is shared artifacts at each level — a charter, a vision, design documents, whatever fits the project. These are artifacts of clarity, not procedures of compliance. The point is having something you can point to that captures alignment, not following a prescribed process to produce it.
 
 ## Success Criteria
 
