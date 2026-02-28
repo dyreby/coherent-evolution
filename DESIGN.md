@@ -76,9 +76,10 @@ What matters is detecting drift early and correcting at the right level.
 - Absorb when the signal is local: a one-off exception, a single ambiguous case, a friction that resolves with a small clarification at the current level.
 - Escalate when the signal is structural: the same pattern across multiple instances, friction that can't be resolved without reinterpreting a higher level, or disagreement that persists after the current level's constraints have been applied.
 
-## Artifacts of Clarity and Change
+## Artifacts
 
-CE identifies two kinds of artifacts that make collaboration work.
+The vision describes shared artifacts at each level — something you can point to that captures alignment.
+In practice, there are two kinds of artifacts that make collaboration work.
 
 **Artifacts of clarity** make alignment visible.
 They capture what a project is and how it thinks about itself.
