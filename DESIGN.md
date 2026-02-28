@@ -83,9 +83,7 @@ In practice, there are two kinds of artifacts that make collaboration work.
 
 ### Clarity
 
-Artifacts of clarity make alignment visible.
-They capture what a project is and how it thinks about itself.
-Every project following CE needs structural clarity at three levels:
+Artifacts of clarity capture what alignment looks like at each level.
 
 - **Charter** — why the project exists.
   Short enough to hold in memory.
@@ -99,11 +97,16 @@ Every project following CE needs structural clarity at three levels:
   References vision constraints.
   Captures patterns, boundaries, and classification decisions.
 
+- **Implementation** — the code itself.
+  Expresses design decisions in working software.
+
 ### Change
 
-Artifacts of change make evolution traceable.
-They capture why decisions were made, so the reasoning survives the conversations they were made in.
-What these artifacts look like varies by project: issues, pull requests, commit history, design docs, conversation threads, whatever fits.
+Artifacts of change capture how those artifacts evolve.
+They preserve why decisions were made, so the reasoning survives the conversations they were made in.
+What these look like varies by project: issues, pull requests, commit history, design docs, conversation threads, whatever fits.
+They serve all levels — a pull request might change the vision or fix a bug.
 
-There's a balance. Too many artifacts create noise; too few risk context being lost.
-What the right balance is, and how it evolves with the project, is a conversation for those involved.
+How many to keep is its own question.
+Too many create noise; too few risk context being lost.
+The right balance, and how it evolves with the project, should be a continuing conversation for those involved.
