@@ -103,3 +103,25 @@ Each project finds how best to serve them.
 - **Revision trail** — when vision or design change, the change is traceable.
   What shifted, why, and what it affects downstream.
   Without the trail, feedback dissipates.
+
+## Versioning Semantics
+
+CE uses [semantic versioning](https://semver.org). The version number reflects what kind of change was made to the model.
+
+**Major** — changes that alter model semantics: level definitions, constraint relationships, the alignment definition, or the classification protocol.
+A project following CE v1 would need to re-evaluate past decisions under v2.
+
+**Minor** — clarification or extension that doesn't change semantics.
+New guidance that supplements existing definitions without reinterpreting them.
+Past decisions don't require reclassification.
+
+**Patch** — editorial only.
+Typos, wording clarity, no conceptual impact.
+
+**Litmus test:** Would adopting the new version require a project to reinterpret past decisions?
+If yes, it's a major change.
+
+**CE versioning under its own model:**
+Pinning a CE version is a Design artifact — it names the governance model in use.
+Upgrading CE in a project is at least a Design-level change, since it may alter how changes are classified.
+A major CE version bump is a Vision-level change: the frame for what "success" means has shifted.
