@@ -29,23 +29,24 @@ Signs that a higher-level conversation may serve you well:
 
 ## Change Classification
 
-Changes in a project happen at different levels, and the level determines the blast radius.
+Changes in a project happen at different levels.
+The level shapes the meaning and the blast radius.
 
-- **Implementation** — the work.
-  The change stays within existing design boundaries.
-  No new patterns, no structural shifts.
+- **Implementation** — changes here are the work.
+  - Stays within existing design boundaries.
+  - No new patterns, no structural shifts.
 
-- **Design** — learning.
-  The change introduces or revises a pattern, module boundary, or architectural choice.
-  Existing implementation may need to adapt.
+- **Design** — changes here indicate learning.
+  - Introduces or revises a pattern, module boundary, or architectural choice.
+  - Existing implementation may need to adapt.
 
-- **Vision** — growth.
-  The change redefines what success looks like or shifts priorities.
-  All design and implementation decisions become candidates for reassessment.
+- **Vision** — changes here represent growth.
+  - Redefines what success looks like or shifts priorities.
+  - All design and implementation decisions become candidates for reassessment.
 
-- **Charter** — a new project.
-  The fundamental purpose changes.
-  Everything below is invalidated and rebuilt from the new foundation.
+- **Charter** — changes here mean a new project.
+  - The fundamental purpose changes.
+  - Everything below is invalidated and rebuilt from the new foundation.
 
 When classification isn't obvious, these questions may help:
 
