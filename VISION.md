@@ -1,30 +1,59 @@
 # Vision
 
-Every project involves decisions that range from why it exists to how the code is written. Coherent Evolution is a model that makes those levels explicit so you can focus on the ones that matter to you.
+## The model
 
-- Charter — Why we're here
-- Vision — What serves that purpose today
-- Design — How it gets built
-- Implementation — The code to do it
+Software is built on layers of decisions.
+At the top: *what* is this for? Below that: *how* do we get there?
+And each *how* opens its own question — *what* does this piece need to do, and *how* should it do it? — repeating downward through layers of detail.
 
-Each level contains its own why, what, and how, and constrains the next — all the way down to tabs vs. spaces.
+Coherent Evolution is a model for staying aligned across those layers as a project changes.
+It gives teams a shared language for locating alignment problems and deciding where to focus.
 
-Change means different things at different levels. When the charter changes, that's a new project. When the vision evolves, that's growth. When the design changes, that's learning. When the implementation changes, that's the work.
+## The *what* and *how*, all the way down
 
-Not everyone needs or wants to care about every level, and that's a gift, not a gap. Share the understanding, build the trust, and you can do what you love and call it work.
+Every level of a project has a *what* (the intent) and a *how* (the approach).
+The *what* at one level is answered by the *how* at that level, and that *how* becomes the *what* for the level below it.
 
-What makes this possible is shared artifacts at each level — a charter, a vision, design documents, whatever fits the project. Something you can point to that captures alignment, not a prescribed process for producing it.
+Fewer people are involved at each successive level.
+A project's purpose concerns everyone.
+A subsystem's interface concerns the people working on and around it.
+An implementation detail concerns whoever is writing the code or will work with it in the future.
 
-## Success Criteria
+People engage where they care about the *what*.
+Once they're satisfied the shared understanding at that level is sufficient, they can release the *how* to the people working at the next level down.
+Those people can then work without needing to check back constantly.
+That trust is the mechanism that lets work flow without bottlenecks, and it only holds when the *what* is genuinely shared.
 
-- Changes can be clearly classified by level. When someone proposes a change, it's obvious whether it touches charter, vision, design, or implementation.
-- Wrong-level conflicts decrease. Design disagreements stop masquerading as implementation debates. Charter tensions stop surfacing as design friction.
-- Implementation pain surfaces design flaws without destabilizing everything. The levels contain blast radius — a broken abstraction doesn't trigger an existential conversation.
-- Alignment reduces cognitive load. Contributors can explain their level's goals without reciting the charter. The levels create natural boundaries for what you need to hold in your head.
+When a level is aligned on its *what*, the work below it is encapsulated.
+You don't need to understand every implementation choice to trust a subsystem, and you don't need to understand every subsystem to trust the project is heading in the right direction.
+Each level of alignment reduces what the levels above need to track.
 
-## Non-Goals
+## Change has a level
 
-- **Prescribing process.** No ceremonies, cadences, or workflows. It's a model for understanding change, not a methodology for managing it.
-- **Defining governance.** It identifies what kind of change is happening, not who gets to make it. Authority and ownership structures are yours to define.
-- **Replacing domain expertise.** It's a lens, not a substitute. Knowing that a change is at the design level doesn't tell you what the right design is.
-- **Standardizing structure.** No required file layouts, document formats, or organizational hierarchies. The artifacts are yours to shape.
+When something changes, the most important question is: which level does it affect?
+
+A change to *how* something is implemented is different from a change to *what* a component is supposed to do, which is different from a change to *what* the project is for.
+The response, the people involved, and the ripple effects all depend on the level.
+
+Change is constant — during initial development, as needs shift, as people and technology change.
+Alignment is never done; the structure helps you know where to re-align when things shift.
+
+Friction at one level often surfaces a misalignment at the level above.
+Persistent disagreement about an implementation detail may indicate misalignment on the *what* behind that *how*.
+Recognizing that pattern lets you focus on the right problem.
+
+## What success looks like
+
+The Coherent Evolution model is working when:
+
+- People can identify what level a change belongs to.
+- Disagreements about *how* resolve quickly when the *what* is aligned.
+- Friction at one level surfaces issues at the level above without destabilizing everything.
+- People can explain their level's *what* without needing deep understanding of the levels above.
+
+## What Coherent Evolution is not
+
+- Not a process framework. There are no ceremonies, cadences, or prescribed workflows.
+- Not governance. It identifies what kind of change is happening, not who decides.
+- Not a replacement for domain expertise. Knowing which level a question belongs to doesn't answer the question.
+- Not prescribing structure. No required artifacts, file layouts, or formats.
