@@ -1,7 +1,7 @@
 # Design
 
-The vision describes *why* conversations at the right level matter.
-This document is about *what* supports those conversations: the artifacts and practices we find useful for applying the model.
+The vision describes *what* alignment looks like across levels.
+This document is about *how* to support that alignment in practice: the artifacts and practices we find useful for applying the model.
 Two kinds of artifacts matter: artifacts that capture clarity, and artifacts that capture change.
 
 ## Artifacts of clarity
