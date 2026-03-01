@@ -1,7 +1,3 @@
 # Charter
 
-Building software is a collaborative act.
-
-Everyone involved cares about something at some level — where we're going, how we get there, or tabs vs. spaces.
-
-This is a model for finding the level where alignment lives and the work gets light.
+Software development involves deciding what to build and how to build it. Those decisions happen at every level, from what problem we're solving to tabs vs spaces. When people build software together, staying aligned across those levels as the project changes is hard. Coherent Evolution is a model that helps people stay aligned as the software evolves.
