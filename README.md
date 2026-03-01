@@ -4,6 +4,7 @@ A model for staying aligned as software evolves.
 
 Building software involves deciding what to do and how to do it, at every level from the problem it's solving to tabs versus spaces.
 When people build software together, staying aligned as the project changes is hard.
+
 Coherent Evolution makes that visible, so teams can align where it matters and work independently where it doesn't.
 
 ## The model
