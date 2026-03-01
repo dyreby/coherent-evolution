@@ -1,94 +1,94 @@
 # Design
 
-This document bridges the [Vision](VISION.md) to practice.
+The vision describes *why* conversations at the right level matter.
+This document is about *what* supports those conversations: the artifacts and practices we find useful for applying the model.
+Two kinds of artifacts matter: artifacts that capture clarity, and artifacts that capture change.
 
-## Constraints and Feedback
+## Artifacts of clarity
 
-Each level constrains the next downward:
+At each level of a project, shared understanding works best when it lives in something concrete: documents, code, whatever makes alignment at that level legible.
+We find these useful:
 
-- Charter constrains Vision.
-- Vision constrains Design.
-- Design constrains Implementation.
+- **A charter** captures the top-level *what*.
+  What is this project for? Who is it for?
+  A few sentences that everyone involved can point to.
+- **A vision** captures the *how* at the highest level: the approach, the model, the shape of the solution.
+  It answers the charter and becomes the *what* for the level below.
+- **Design documents** capture the *how* at the next level down: what tools, structures, and patterns serve the vision.
+  Each design doc answers a piece of the vision and becomes the *what* for the people building it.
+- **The code itself** is an artifact of clarity at the lowest level.
+  It captures the *how* of implementation.
+  When it's clear, it speaks for itself. When it isn't, that's a signal.
 
-Feedback flows upward:
+These aren't prescribed formats.
+A charter might be one sentence. A design doc might be a diagram.
 
-- Implementation pain signals design flaws.
-  Repeated workarounds, excessive boilerplate, patterns that fight the architecture.
-- Design friction signals vision gaps.
-  Design decisions that can't be made without re-interpreting the vision, or design goals that conflict with each other.
-- Vision tension signals charter ambiguity.
-  Vision goals that pull in incompatible directions, or evolution that no longer clearly serves the charter.
+The test is always the same: if someone new joins at this level, do they have what they need to understand the *what* and contribute to the *how*?
+We call this the onboarding test.
+It's the simplest way to check whether your artifacts of clarity are working.
 
-Misalignment is easiest to resolve at the highest level where it occurs.
-Signs that a higher-level conversation may serve you well:
+## Artifacts of change
 
-- Exception lists keep growing.
-- More unicorns are allowed.
-- The same type of friction keeps reappearing.
-- People seem to be talking past each other.
+Clarity artifacts capture where alignment stands now.
+But alignment shifts, and the reasoning behind those shifts matters as much as the result.
 
-## Change Classification
+Artifacts of change capture how and why the clarity artifacts evolve.
+Issues, pull requests, commit messages, conversation threads.
+They answer a different question than artifacts of clarity.
+Clarity artifacts say "here's what we aligned on."
+Change artifacts say "here's how we got there."
 
-Changes in a project happen at different levels.
-The level shapes the meaning and the blast radius.
+This matters because reasoning doesn't survive memory.
+The context behind a decision fades, for the people who made it and certainly for anyone who arrives later.
+When artifacts of change are working, someone can trace a decision back to the conversation that produced it and understand the tradeoffs that were weighed.
 
-**Implementation** — changes here are the work.
-- Stays within existing design boundaries.
-- No new patterns, no structural shifts.
+Not every decision needs this level of documentation.
+The overhead of capturing reasoning should match the stakes.
+A one-line fix doesn't need the same trail as a design change.
+But when a decision affects alignment at a level, when it changes the *what*, the reasoning is worth preserving.
 
-**Design** — changes here indicate learning.
-- Introduces or revises a pattern, module boundary, or architectural choice.
-- Existing implementation may need to adapt.
+## Feedback between levels
 
-**Vision** — changes here represent growth.
-- Redefines what success looks like or shifts priorities.
-- All design and implementation decisions become candidates for reassessment.
+Friction at one level often signals misalignment at the level above.
+A persistent argument about implementation may mean the *what* behind it isn't actually shared.
+A design that keeps getting reworked may point to an unresolved question in the vision.
 
-**Charter** — changes here mean a new project.
-- The fundamental purpose changes.
-- Everything below is invalidated and rebuilt from the new foundation.
+Concrete artifacts make this signal visible.
+An issue that keeps reopening, a PR discussion that won't converge, a pattern of rework in the code: these are legible signs that something above needs attention.
+Without artifacts, the signal stays informal and easy to miss.
 
-When classification isn't obvious, these questions may help:
+The response is to move the conversation to the right level.
+Not to escalate, but to locate.
+The model gives you a way to say "I think we're disagreeing about the *what*, not the *how*" and redirect from there.
 
-1. Does this change the project's purpose? → Charter.
-2. Does this change what success looks like or what the project values? → Vision.
-3. Does this introduce a new pattern, boundary, or structural decision? → Design.
-4. None of the above → Implementation.
+## Signal and noise
 
-When in doubt, default to the lower level.
-If the change keeps bumping into higher-level questions, that's a sign it belongs higher.
+More artifacts aren't better.
+Every doc, issue, and comment is something someone might need to read.
+The balance between capturing enough context and drowning in noise is a continuing conversation, not a solved problem.
 
-## Artifacts
+Some useful questions:
 
-The vision describes shared artifacts at each level — something you can point to that captures alignment.
-In practice, there are two kinds of artifacts that make collaboration work.
+- Is anyone reading this artifact? If not, is it serving clarity or just ceremony?
+- Can someone at this level get oriented without reading everything below?
+- When a decision gets revisited, can the reasoning behind it be found?
 
-### Clarity
+There's no formula.
+The right balance depends on the team, the project, and the moment.
+Noticing when you're missing context is a signal to capture more.
+Noticing when docs are stale or ignored is a signal to capture less.
 
-Artifacts of clarity capture what alignment looks like at each level.
+## A concrete example
 
-- **Charter** — why the project exists.
-  Short enough to hold in memory.
-  Stable enough that changing it means starting over.
+We find GitHub issues and pull requests useful as artifacts of change.
 
-- **Vision** — what serves that purpose today.
-  Includes goals, success criteria, and explicit non-goals.
-  Evolves as understanding grows.
+An issue captures the *what* of a change: what needs to happen and why.
+A pull request captures the *how*: the approach, the tradeoffs, the conversation around them.
+Together they form a trail from intent to implementation that anyone can follow later.
 
-- **Design** — how the vision gets built.
-  References vision constraints.
-  Captures patterns, boundaries, and classification decisions.
+When a PR discussion stalls, it's often because the *what* isn't shared.
+Moving that conversation to an issue, relocating it to the right level, tends to unstick things.
 
-- **Implementation** — the code itself.
-  Expresses design decisions in working software.
-
-### Change
-
-Artifacts of change capture how those artifacts evolve.
-They preserve why decisions were made, so the reasoning survives the conversations they were made in.
-What these look like varies by project: issues, pull requests, commit history, design docs, conversation threads, whatever fits.
-They serve all levels — a pull request might change the vision or fix a bug.
-
-How many to keep is its own question.
-Too many create noise; too few risk context being lost.
-The right balance, and how it evolves with the project, should be a continuing conversation for those involved.
+This isn't the only way.
+Other tools, other workflows: the mechanism matters less than whether the reasoning is preserved and findable.
+The artifact is a side effect of the conversation, not a replacement for it.
