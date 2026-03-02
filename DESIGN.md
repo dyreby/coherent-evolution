@@ -82,12 +82,14 @@ Noticing when docs are stale or ignored is a signal to capture less.
 
 We find GitHub issues and pull requests useful as artifacts of change.
 
-An issue captures the *what* of a change: what needs to happen and why.
-A pull request captures the *how*: the approach, the tradeoffs, the conversation around them.
-Together they form a trail from intent to implementation that anyone can follow later.
+An issue captures the *what* of a change and proposes the *how*.
+The goal is to reach alignment in the issue: define what needs to happen, why, and how it should be approached.
+By the time a pull request exists, the important decisions should already be made.
 
-When a PR discussion stalls, it's often because the *what* isn't shared.
-Moving that conversation to an issue, relocating it to the right level, tends to unstick things.
+A pull request is the implementation of what the issue aligned on.
+It should be relatively boring, approval with maybe a few small suggestions or observations.
+When a PR sparks significant debate, that's usually a sign the issue didn't go far enough.
+Moving that conversation to where it belongs, usually back to the issue, sometimes to a level above, tends to unstick things.
 
 This isn't the only way.
 Other tools, other workflows: the mechanism matters less than whether the reasoning is preserved and findable.
